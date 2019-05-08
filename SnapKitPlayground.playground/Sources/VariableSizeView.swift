@@ -32,7 +32,7 @@ public class VariableSizeView : UIView {
         backgroundColor = .white
         addSubview(handleView)
         addSubview(variableView)
-        sendSubview(toBack: variableView)
+        sendSubviewToBack(variableView)
 
         handleView.snp.makeConstraints { (make) in
             make.size.equalTo(CGSize(width: 20, height: 20))
